@@ -1,0 +1,382 @@
+<!DOCTYPE html>  
+<html>
+<head>
+ <title>Cards</title>
+</head>
+
+<style type="text/css">
+
+
+*{
+ margin: 0 px;
+ padding: 0 px;
+}
+body{
+   background-color:slategray ;
+   font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+
+.card{
+     background-color: snow;
+     width: 25%;
+     height: 25%;
+     display: inline-table;
+     box-shadow: 5 px 5 px  50  px rgb(29, 24, 24);
+     border-radius: 5 px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5 px;
+  border-top-left-radius: 5 px;
+}
+
+.title{
+ 
+  text-align: center;
+  padding: 10 px;
+  
+ }
+
+h1{
+  font-size: 20 px;
+ }
+
+.des{
+  padding: 3 px;
+  text-align: center;
+ 
+  padding-top: 10 px;
+        border-bottom-right-radius: 5 px;
+  border-bottom-left-radius: 5 px;
+}
+button{
+  margin-top: 40 px;
+  margin-bottom: 10 px;
+  background-color: white;
+  border:  1 px solid black;
+  border-radius: 5 px;
+  padding:10 px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.search{
+         padding-left: 10 px;
+         padding-right: 10 px;
+         margin-top:0 px;
+         position:absolute;
+         left: 20 px;
+         height: 30 px;
+        display: -webkit-inline-box;
+}
+#container{
+
+width: 100%;
+
+  height: 50px; 
+  
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+#container button {
+    height: 35px;
+    width: 80px;
+  border: 2px solid;
+  background: #2691d9;
+  border-radius: 5px;
+  font-size: 18px;
+  
+  color: #e6f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  padding: 6px; 
+  margin: 5px; 
+  display: flex;
+  justify-content: center; 
+    
+ } 
+ .button :hover{
+        border-color:#2691d9 ;
+        transition: .5s;
+ }
+</style>
+<body>
+
+<!---search bar-->
+  <div class="search">
+   <input type="text" value="" id="search" placeholder="search" onkeyup="search()">
+   
+</div>
+<script>
+
+const search =() =>
+{
+   let filter = document.getElementById('search').value.toUpperCase();
+   let card = document.getElementById('search');
+   let title = card.getElementById('search');
+   for(var i=0; i<title.length; i++){
+      let des = title.getElementById('search');
+
+   }
+}
+
+</script>
+<br>
+<!---search bar-->
+<section id="container">
+    
+   <div>
+       <button type="button" class="btn">Add</button>
+   </div>
+   <div>
+       <button type="button" class="btn">Update</button>
+   </div>
+   </section>
+
+<div class="main">
+
+
+<div class="card">
+
+<div class="image">
+   <img src="Matheran.jpg">
+</div>
+<div class="title">
+ <h1>Matheran</h1>
+</div>
+<div class="des">
+ <p>
+   <h3><strong>₹ 12,847/-</strong></h3> <h3>3 days/ 2 night</h3><br>
+   <h3 > Places to visit: </h3> 
+    Matheran Hill Station<br>
+    Charlotte Lake<br>
+    Panorama Point<br>
+    One Tree Hill Point<br>
+    Sunset Point<br>
+    Echo Point<br>
+ </p> <a href="http://127.0.0.1:5500/trial.html/info.html">
+<button>View Details</button></a>
+<button>Book Now</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+   <div class="image">
+      <img src="Mahabaleshwar_in_Winter.jpg">
+   </div>
+   <div class="title">
+    <h1>Mahabaleshwar</h1>
+   </div>
+   <div class="des">
+    <p>
+       <h3><strong>₹ 8,999/-</strong></h3> <h3>3 days/ 2 night</h3><br>
+        <h3 > Places to visit: </h3> 
+           Mahabaleshwar Hill Station<br>
+           Mahabaleshwar Temple<br>
+           Elephants Head Point<br>
+           Venna Lake<br>
+           Pratapgarh Fort<br>
+           Laxmi Strawberry Farm
+        
+    </p><a href="http://127.0.0.1:5500/trial.html/info2.html">
+   <button>View Details</button></a>
+   <button>Book Now</button>
+   </div>
+   </div>
+   <!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="kaas pathar.jpg">
+</div>
+<div class="title">
+ <h1>Panchgani</h1>
+</div>
+<div class="des">
+ <p>
+   <h3><strong>₹ 8,750/-</strong></h3> <h3>3 days/ 2 night</h3><br>
+   <h3 > Places to visit: </h3> 
+     Tableland<br>
+     Mapro Farms<br>
+     Sydney Point<br>
+     Hunter Point<br>
+     Parsi Point<br>
+     Kates Point
+ </p><a href="http://127.0.0.1:5500/trial.html/info3.html">
+<button>View Details</button></a>
+<button>Book Now</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="alibag.jpeg">
+</div>
+<div class="title">
+ <h1>Alibaug</h1>
+</div>
+<div class="des">
+ <p>
+    <h3><strong>₹ 8,750/-</strong> </h3> <h3>3 days/2 night</h3><br>
+   <h3> Places to visit: </h3>
+   Varsoli Beach <br>
+   Kashid Beach<br>
+   Kihim Beach<br>
+   Akshi Beach<br>
+   Kolaba Fort<br>
+   Rewas Jetty<br>
+   Murud-Janjira Fort
+</p>
+<button>View Details</button>
+<button>Book Now</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+   <div class="image">
+      <img src="khandala.png">
+   </div>
+   <div class="title">
+    <h1>khandala</h1>
+   </div>
+   <div class="des">
+    <p>
+       <h3><strong>₹ 10,500/-</strong></h3> <h3> 3 days/2 nights</h3><br>
+       <h3>Places to visit:</h3>
+       Lion's Point<br>
+       Bhushi Lake<br>
+       Rajmachi Fort<br>
+       Duke's Nose<br>
+       Shingroba Temple
+    </p>
+   <button>View Details</button>
+   <button>Book Now</button>
+   </div>
+   </div>
+   <!--cards -->
+
+   
+<div class="card">
+
+   <div class="image">
+      <img src="mandir.jpeg">
+   </div>
+   <div class="title">
+    <h1>Ganpatipule</h1>
+   </div>
+   <div class="des">
+    <p>
+       <h3><strong>₹ 9000/-</strong></h3> <h3>3 days/2 nights</h3><br>
+       <h3>Places to visit:</h3>
+       Swayambhu Ganpati Temple<br>
+       Prachin Konka<br>
+       Jaigad Fort<br>
+       Thibaw Palace<br>
+    </p>
+   <button>View Details</button>
+   <button>Book Now</button>
+   </div>
+   </div>
+   <!--cards -->
+
+   
+<div class="card">
+
+   <div class="image">
+      <img src="caves.jpeg">
+   </div>
+   <div class="title">
+    <h1>Ajanta and Ellora caves</h1>
+   </div>
+   <div class="des">
+    <p>
+      <h3><strong>₹ 11,000/-</strong></h3> <h3>3 days/2 nights</h3><br>
+       <h3>Places to visit:</h3>
+       Ajanta Caves<br>
+       Grishneshwar Temple <br>
+       Ellora<br>
+       Buddhist caves<br> 
+       Bibi Ka Makbara<br> 
+       Jain Caves<br> 
+    </p>
+   <button>View Details</button>
+   <button>Book Now</button>
+   </div>
+   </div>
+   <!--cards -->
+
+   
+<div class="card">
+
+   <div class="image">
+      <img src="lonavla.png">
+   </div>
+   <div class="title">
+    <h1>Lonavla</h1>
+   </div>
+   <div class="des">
+    <p>
+      <h3><strong>₹ 6,500/-</strong></h3> <h3>3 days/2 nights</h3><br>
+      <h3>Places to visit:</h3>
+      Tiger's Leap <br>
+      Bhaja Caves <br>
+      Karla Caves<br>
+      Bhushi Dam<br> 
+      Tikona Fort<br> 
+      Pawna Lake <br>   
+    </p>
+   <button>View Details</button>
+   <button>Book Now</button>
+   </div>
+   </div>
+
+<!--cards -->
+     
+<div class="card">
+
+   <div class="image">
+      <img src="tarkarli.png">
+   </div>
+   <div class="title">
+    <h1>Kirkali</h1>
+   </div>
+   <div class="des">
+    <p>
+      <h3><strong>₹ 8000/-</strong></h3> <h3>3 days/2 nights</h3><br>
+      <h3>Places to visit:</h3>
+      Deobagh<br>
+      Dhamapur Lake <br>
+      Sindhudurg Fort<br>
+      Shree Shiv Chhatrapati Temple<br> 
+      Achra Beach<br> 
+      Tsunami Island <br> 
+    </p>
+   <button>View Details</button>
+   <button>Book Now</button>
+   </div>
+   </div>
+</div>
+</body>
+</html>
